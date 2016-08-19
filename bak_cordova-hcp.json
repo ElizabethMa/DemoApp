@@ -1,0 +1,7 @@
+{
+  "name": "MyApp",
+  "ios_identifier": "",
+  "android_identifier": "",
+  "update": "resume",
+  "content_url": "http://192.168.1.70:8000/mobile/www"
+}

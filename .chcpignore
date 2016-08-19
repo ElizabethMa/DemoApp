@@ -1,0 +1,10 @@
+chcp.json
+chcp.manifest
+package.json
+node_modules/*
+
+# Ignore libraries
+libs/*
+
+# Ignore images
+images/*
