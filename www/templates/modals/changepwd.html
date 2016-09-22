@@ -1,0 +1,15 @@
+<ion-modal-view class="changepwd">
+    <ion-header-bar>
+        <div class="buttons left">
+            <button class="button button-open" ng-click="closeModal()">返回</button>
+        </div>
+        <h1 class="title">重置{{ login_params.type=='sim'?'模拟':'实盘' }}密码</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list list-inset">
+            <div class="item">
+                <a ng-click="changepwdModal.hide()" >返回{{ login_params.type=='sim'?'模拟':'实盘' }}登录</a>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

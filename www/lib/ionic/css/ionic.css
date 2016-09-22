@@ -3332,7 +3332,8 @@ body,
   overflow: hidden;
   margin: 0;
   padding: 0;
-  color: #000;
+  /*color: #000;*/
+  color: #fff;
   word-wrap: break-word;
   font-size: 14px;
   font-family: -apple-system;
@@ -3557,7 +3558,11 @@ ion-infinite-scroll {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+
+  /* background-color */
+  background-color: #666;
+
+  /*background-color: #fff;*/
   overflow: hidden; }
 
 .view-container {
@@ -5780,8 +5785,12 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
     color: #fff; }
   .item.item-dark {
     border-color: #111;
-    background-color: #444;
+    background-color: #666;
     color: #fff; }
+.item.item-dark.item-divider {
+  border-color: #111;
+  background-color: #444;
+  color: #fff; }
   .item[ng-click]:hover {
     cursor: pointer; }
 

@@ -1,27 +1,91 @@
 [
   {
+    "file": "css/modals.css",
+    "hash": "bd1fc2681499dc31b68c1fc040193106"
+  },
+  {
     "file": "css/style.css",
-    "hash": "84a33cf00d95bc1e3617cc35262f7e94"
+    "hash": "abff732292efb3c5bf34f7c1d6b3600c"
   },
   {
     "file": "img/ionic.png",
     "hash": "251ebf03b1c7889cf36cbcbcce8f689e"
   },
   {
+    "file": "img/logo.png",
+    "hash": "7e34c95ac701f8cd9f793586b9df2156"
+  },
+  {
     "file": "index.html",
-    "hash": "10cf4987f616d88495079604ca730922"
+    "hash": "42820c9b33ed9c98a8f891a0f743d801"
   },
   {
     "file": "js/app.js",
-    "hash": "2e3c9484c8ce95263574c36afadb3ef0"
+    "hash": "dd04c1ea2f0f05949c2b37da7d031170"
+  },
+  {
+    "file": "js/common.js",
+    "hash": "16eab295cabce63350a07d07a8b27311"
   },
   {
     "file": "js/controllers.js",
-    "hash": "2ef7ff412a6522e9b6f052b85785f3fa"
+    "hash": "96509408797ffb948a32c2c70e430d99"
+  },
+  {
+    "file": "js/controllers/certController.js",
+    "hash": "2290cc40b2a85db6d936eedd61936243"
+  },
+  {
+    "file": "js/controllers/collectController.js",
+    "hash": "2decb1ef6bd6abc0fb2b09e1cc08a49a"
+  },
+  {
+    "file": "js/controllers/depositoryController.js",
+    "hash": "8b1e99a7c26888c40e9999b2cf06c202"
+  },
+  {
+    "file": "js/controllers/profileController.js",
+    "hash": "cc1a16907cbe2e6f17e099aed817920d"
+  },
+  {
+    "file": "js/controllers/protocolController.js",
+    "hash": "cec8b13351d8982d5e308c40134691e8"
+  },
+  {
+    "file": "js/controllers/videoController.js",
+    "hash": "c87403b3aa14cc2fe8d3267a9ccf3cfa"
+  },
+  {
+    "file": "js/cordova/takePic.js",
+    "hash": "e23d0a796925c5ff678f39ab5fa01e51"
+  },
+  {
+    "file": "js/drawFunctions.js",
+    "hash": "68b329da9893e34099c7d8ad5cb9c940"
+  },
+  {
+    "file": "js/forge.bundle.js",
+    "hash": "d13a6e0aa239ea44bb5bd2ed7ae7245c"
+  },
+  {
+    "file": "js/forge.min.js",
+    "hash": "533003655dbf31ee0840d082af09a26f"
+  },
+  {
+    "file": "js/index.js",
+    "hash": "229ada0e4eeb6a8225c9098484610ec1"
   },
   {
     "file": "js/services.js",
-    "hash": "cbd09d457c83e95d5f227fb6cc570b01"
+    "hash": "fedebd2ea8169afdeebfef524bde8572"
+  },
+  {
+    "file": "js/services/openTypeService.js",
+    "hash": "c9a694de494ea4adca84487882cc6bf1"
+  },
+  {
+    "file": "js/views/profileView.js",
+    "hash": "76d9bbb6a8397fc97a669da6779488d5"
   },
   {
     "file": "lib/ionic/css/ionic.css",
@@ -276,8 +340,16 @@
     "hash": "dad8b70ac11bec5ce5e51d7de697228c"
   },
   {
+    "file": "lib/ng-cordova.js",
+    "hash": "d95b5124c2c7c49f27e143d41cf8a182"
+  },
+  {
+    "file": "lib/ng-cordova.min.js",
+    "hash": "5c2332c0d6da30e9eaab7f1ab32d46d8"
+  },
+  {
     "file": "lib/ng-datamanager.js",
-    "hash": "2bccac455e26f7576f389199393df5fc"
+    "hash": "d2f62dcf00a443c4e60d0d629076b24b"
   },
   {
     "file": "lib/ng-websocket.js",
@@ -288,43 +360,75 @@
     "hash": "3ecaba3942ddcbc34d094fcf2fbb4917"
   },
   {
+    "file": "templates/banktransfer.html",
+    "hash": "daec148bf12ab0ba8118ed7af3ddcf59"
+  },
+  {
     "file": "templates/history.html",
     "hash": "7b43476744db526295e5d45c73ebec1d"
   },
   {
-    "file": "templates/login.html",
-    "hash": "06be014516081ef94fdd8568a91df90d"
-  },
-  {
     "file": "templates/menu.html",
-    "hash": "2db952527399f62d7f8c53e9c5a2c5be"
+    "hash": "07fef32e8f067fad5dfd98e2c1dbda95"
   },
   {
-    "file": "templates/modal.html",
-    "hash": "d2c7eb12b7fc513bf4ff69859c832b7d"
+    "file": "templates/modals/changepwd.html",
+    "hash": "d9b228a21dd4c0b158cc7f9bf2366791"
   },
   {
-    "file": "templates/playlist.html",
-    "hash": "0d6b4734c076555baf45519f92b74480"
+    "file": "templates/modals/login.html",
+    "hash": "c4b4f6dd0b88812f7fdf9f0c09b31f6a"
   },
   {
-    "file": "templates/playlists.html",
-    "hash": "7dae3994b922b179635e7c65c153fd21"
+    "file": "templates/modals/register.html",
+    "hash": "13f7ca939eb0423713864f13bcf05cf3"
+  },
+  {
+    "file": "templates/posdetail.html",
+    "hash": "d06e7432705685f20af642bbd2bd7150"
   },
   {
     "file": "templates/position.html",
-    "hash": "85f8f902e01b5e23f94a8cade26e52c1"
+    "hash": "cc3c5db2dbe5ddcac3963d32538a109e"
   },
   {
     "file": "templates/quote.html",
-    "hash": "9dcedb84cc74562ff3be34dd3d1a91df"
+    "hash": "1acffe2c42449aadfe700a2075d73845"
   },
   {
     "file": "templates/tabs.html",
-    "hash": "0fd5690baf0d2f86b4ee5d3b9aa5e9b8"
+    "hash": "8830cb3ba40485a5c8c389b6bea07640"
   },
   {
     "file": "templates/transaction.html",
-    "hash": "fb5718351fad58d7c7e43cc93becd7ca"
+    "hash": "3bab3cbf459ba08ee4a68072e4becec2"
+  },
+  {
+    "file": "templates/userinfo.html",
+    "hash": "414b93f2cf6401e9ac8380fc7561f823"
+  },
+  {
+    "file": "zqjs/app.js",
+    "hash": "c3dc633acf2cdb43c0d03435a639ae20"
+  },
+  {
+    "file": "zqjs/controllers.js",
+    "hash": "bf4ae9ffeb0a5de812997bdedd560d24"
+  },
+  {
+    "file": "zqjs/d3.js",
+    "hash": "a061905d8117a734562201da2fe3b7b8"
+  },
+  {
+    "file": "zqjs/datamanager.js",
+    "hash": "366b2bca76780f540c1213d21d001539"
+  },
+  {
+    "file": "zqjs/drawfuncs.js",
+    "hash": "ebffa1e2a4ab04fcd547700a9dc8a01d"
+  },
+  {
+    "file": "zqjs/services.js",
+    "hash": "88646bcc1476b3a595759db53520b2d2"
   }
 ]

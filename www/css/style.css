@@ -1,1 +1,246 @@
-/* Empty. Add your own CSS if you like */
+
+
+/*transaction*/
+.transaction .col{
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: normal;
+    overflow: hidden;
+}
+
+.transaction .item-input-inset{
+    padding: 10px 4px;
+}
+
+.transaction .item-input-wrapper{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/*login*/
+.login .bar {
+    position: relative;
+}
+
+
+/*banktransfer*/
+.banktransfer .item-content-balance{
+    height : 34px;
+    line-height: 34px;
+}
+
+.banktransfer .row button{
+    padding: 0px 20px;
+}
+
+.banktransfer .row{
+    padding: 0px 0px;
+}
+.banktransfer .col{
+    padding: 0px 5px;
+}
+
+
+/*userinfo*/
+.userinfo .bar {
+    position: relative;
+}
+
+/*posdetail*/
+.posdetail .bar {
+    position: relative;
+}
+
+.posdetail .bar .icon {
+    vertical-align: middle;
+}
+
+.posdetail label{
+    margin-bottom: 2px;
+}
+
+.posdetail .largeFont{
+    margin: 0px;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+
+.posdetail .list{
+    margin-bottom: 0px;
+}
+
+.posdetail .button.button-block{
+    margin: 3px;
+    width: 90%;
+    height : 60px;
+}
+
+.posdetail .row,
+.posdetail .col{
+    padding: 0px;
+}
+
+.posdetail .item {
+    padding: 5px;
+}
+
+.posdetail .pos-box{
+    height: 56px;
+    width: 96px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    margin: 2px;
+}
+
+.posdetail .pos-box.red {
+    background-color: red;
+}
+
+.posdetail .pos-box.green {
+    background-color: green;
+}
+
+/*position*/
+
+.pos_container .col {
+    padding : 5px 1px;
+}
+
+.pos_container .col-offset-4 {
+    margin-left: 4%;
+}
+
+.pos_container .col-15 {
+    flex: 0 0 16%;
+    max-width: 16%;
+}
+
+.pos_container .col-33 {
+    flex: 0 0 32%;
+    max-width: 32%;
+}
+
+.pos_container .row {
+    padding: 0px 5px;
+    font-size: 14px;
+}
+.pos_container .item-divider .row {
+    font-size: 16px;
+}
+
+.pos_container .card {
+    margin: 3px 3px;
+}
+
+.pos_container .card .icon{
+    font-size: 20px;
+    display: inline-block;
+}
+.pos_container .card .ion-arrow-up-c{
+    color : red;
+    transform: rotate(45deg);
+}
+.pos_container .card .ion-arrow-down-c{
+    color : green;
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.pos_container .card .item{
+    padding: 0px;
+}
+
+
+/*quote*/
+.qt_container{
+    width: 100%;
+    font-size: 14px;
+}
+
+
+.qt_rwrapper, .qt_cwrapper {
+    overflow: hidden;
+    position: absolute;
+    z-index: 1004;
+    background-color: #666;
+}
+
+.qt_rwrapper {
+    top: 44px;
+}
+
+.qt_cwrapper {
+    top:44px;
+    left:0px;
+}
+
+table.qt_rc {
+    background-color: #666;
+    position: absolute;
+    top:44px;
+    z-index: 1005;
+    width: 100px;
+}
+
+table.qt_r{
+    width: 700px;
+    position: relative;
+}
+
+table.qt_c{
+    width: 100px;
+    position: relative;
+}
+
+table.qt{
+    width: 700px;
+}
+
+table.quote {
+    table-layout:fixed;
+    text-align:center;
+    border-collapse: collapse;
+}
+
+table.quote tr.odd:first-child{
+    border-top: 1px solid #eee;
+}
+
+table.quote tr.even{
+    border-bottom: 1px solid #eee;
+}
+
+table.quote.qt_r thead{
+    border-bottom: 2px solid #eee;
+}
+
+table.quote td:first-child {
+    /*border-left: 1px solid #666;*/
+}
+table.quote td {
+    /*border-right: 1px solid #666;*/
+    table-layout:fixed;
+    height: 20px;
+    width: 100px;
+}
+
+table.quote td{
+    /*text-overflow: ellipsis;*/
+    white-space: nowrap;
+    overflow:hidden;
+    color: #fff;
+}
+
+/*table.quote td.r, table.quote td.R{*/
+    /*color: #F00;*/
+/*}*/
+/*table.quote td.g, table.quote td.G{*/
+    /*color: #0F0;*/
+/*}*/
+
+
+.r, .R{color: #F00;}
+.g, .G{color: #0F0;}

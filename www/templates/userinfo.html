@@ -1,0 +1,31 @@
+<ion-view view-title="个人信息"  hide-nav-bar='true'>
+  <ion-content class="userinfo">
+    <div class="bar-stable bar bar-header">
+      <button ng-click="$ionicGoBack()" nav-transition="none" class="button back-button button-clear header-item">
+        <i class="icon ion-ios-arrow-thin-left"></i>
+      </button>
+      <div class="title title-center header-item">
+         {{ login_states.type=='sim'?'正在使用模拟环境':(login_states.type=='act'?'正在使用实盘环境':'未登录') }}
+      </div>
+    </div>
+
+    <div class="list list-inset">
+
+      <div class="item">
+        <a nav-transition="none" ng-click="login_params.type=login_states.type=='sim'?'act':'sim';loginModal.show();">
+          {{ login_states.type=='sim'?'实盘':'模拟' }}登录</a>
+      </div>
+      <div class="item">
+        <a onclick="window.location.replace('https://appficaos.cfmmc.com/indexnew?brokerId=0127&openType=9&checkBrokerIdFlag=false');" nav-transition="none" >开户</a>
+      </div>
+      <div class="item" >
+        Raiders of the Lost Ark
+      </div>
+      <div class="item">
+        Raiders of the Lost Ark
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>

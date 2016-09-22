@@ -1,6 +1,11 @@
-'use strict';
+/**
+ * add : onopen onmessage 发送 {"aid":"peek_message"}
+ *
+ *       直接更新 datamanager 数据集 , onmessage
+ */
 
 (function () {
+	var debugEnable = false;
 	/**
 	 * @ngdoc provider
 	 * @name $websocketProvider
@@ -131,9 +136,17 @@
 			}
 
 			me.$$ws.onmessage = function (message) {
+				if (me.$ready()) me.$$ws.send('{"aid":"peek_message"}');
 				try {
 					var decoded = JSON.parse(message.data);
-					me.$$fireEvent(decoded.event, decoded.data);
+					if(decoded.aid == "rtn_data"){
+						for(var i=0; i<decoded.data.length; i++){
+							var temp = decoded.data[i];
+							DM.update_data(temp);
+						}
+					}
+					if(debugEnable){console.info('websocket message : ' + message.data);}
+//					me.$$fireEvent(decoded.event, decoded.data);
 					me.$$fireEvent('$message', decoded);
 				}
 				catch (err) {
@@ -146,6 +159,7 @@
 			};
 
 			me.$$ws.onopen = function () {
+				if (me.$ready()) me.$$ws.send('{"aid":"peek_message"}');
 				// Clear the reconnect task if exists
 				if (me.$$reconnectTask) {
 					clearInterval(me.$$reconnectTask);
@@ -215,6 +229,7 @@
 		};
 
 		me.$$send = function (message) {
+			if(debugEnable){console.info('websocket send : '+JSON.stringify(message));}
 			if (me.$ready()) me.$$ws.send(JSON.stringify(message));
 			else if (me.$$config.enqueue) me.$$queue.push(message);
 		};
